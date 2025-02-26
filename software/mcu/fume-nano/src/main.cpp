@@ -29,18 +29,15 @@ void setup()
   set_pwm(0);
   pinMode(CONST::PINS::REF, INPUT);
   pinMode(CONST::PINS::PWR, OUTPUT);
-  digitalWrite(CONST::PINS::PWR, HIGH);
-  Serial.println("Fan OFF.");
-  delay(5000);
-  digitalWrite(CONST::PINS::PWR, LOW);
-  Serial.println("Fan ON.");
-  delay(5000);
-  digitalWrite(CONST::PINS::PWR, HIGH);
-  Serial.println("Fan OFF.");
-  delay(5000);
-  digitalWrite(CONST::PINS::PWR, LOW);
-  Serial.println("Fan ON.");
-  delay(5000);
+  uint8_t on = 0;
+  set_pwm((uint16_t)(1.0*6.4));
+  OCR1B = 500;
+  while(1)
+  {
+    digitalWrite(CONST::PINS::PWR, on);
+    on = !on;
+    delayMicroseconds(2);
+  }
   cnt = 0;
 }
 

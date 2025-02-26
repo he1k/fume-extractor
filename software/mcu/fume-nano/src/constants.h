@@ -13,7 +13,7 @@ namespace CONST
   }
   namespace PWM
   {
-    constexpr uint16_t MAX = 320;
+    constexpr uint16_t MAX = 640;
     constexpr uint16_t MIN = 0;
   }
   namespace CTRL
