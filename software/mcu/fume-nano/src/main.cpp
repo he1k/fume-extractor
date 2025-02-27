@@ -18,7 +18,7 @@ void setup()
   while(!Serial){delay(10);}
   Serial.println("Serial setup.");
   setup_tim1();
-  Serial.println("Timer 1 setup for 25 kHz PWM.");
+  Serial.println("Timer 2 setup for 25 kHz PWM on pin 9 and 10.");
   setup_tacho();
   Serial.println("Tachometer setup.");
   setup_tim2();
@@ -28,16 +28,9 @@ void setup()
   digitalWrite(6, LOW);
   set_pwm(0);
   pinMode(CONST::PINS::REF, INPUT);
-  pinMode(CONST::PINS::PWR, OUTPUT);
   uint8_t on = 0;
   set_pwm((uint16_t)(1.0*6.4));
-  OCR1B = 500;
-  while(1)
-  {
-    digitalWrite(CONST::PINS::PWR, on);
-    on = !on;
-    delayMicroseconds(2);
-  }
+  OCR1B = 320;
   cnt = 0;
 }
 
