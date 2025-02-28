@@ -6,10 +6,10 @@ namespace CONST
   constexpr uint32_t BAUD = 115200;
   namespace PINS
   {
-    constexpr uint8_t TACH = 2;
-    constexpr uint8_t PWM  = 9;
-    constexpr uint8_t REF  = 15;
-    constexpr uint8_t PWR  = 4;
+    constexpr uint8_t TACH     = 2;
+    constexpr uint8_t PWM_FAN  = 9;
+    constexpr uint8_t REF      = 15;
+    constexpr uint8_t PWM_MOS  = 10;
   }
   namespace PWM
   {

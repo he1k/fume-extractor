@@ -24,13 +24,8 @@ void setup()
   setup_tim2();
   Serial.println("Timer 1 setup for control loop.");
   sei();
-  pinMode(6, OUTPUT);
-  digitalWrite(6, LOW);
-  set_pwm(0);
   pinMode(CONST::PINS::REF, INPUT);
   uint8_t on = 0;
-  set_pwm((uint16_t)(1.0*6.4));
-  OCR1B = 320;
   cnt = 0;
 }
 
@@ -39,8 +34,8 @@ void loop() {
   {
     flg = 0;
     uint16_t in = analogRead(CONST::PINS::REF);
-    uint16_t pwm = (uint16_t)(in*0.3125f);
-    set_pwm(pwm);
+    uint16_t pwm = (uint16_t)(in*0.625f);
+    set_pwm(pwm, CONST::PINS::PWM_MOS);
     //set_pwm(0);
     cnt++;
     if(cnt == 24)
