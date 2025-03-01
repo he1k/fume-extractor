@@ -35,16 +35,16 @@ void loop() {
     flg = 0;
     uint16_t in = analogRead(CONST::PINS::REF);
     uint16_t pwm = (uint16_t)(in*0.625f);
-    set_pwm(pwm, CONST::PINS::PWM_MOS);
+    set_pwm(320, CONST::PINS::PWM_MOS);
     //set_pwm(0);
     cnt++;
     if(cnt == 24)
     {
       int16_t tacho_d = abs(tacho_cnt - tacho_cnt_prev);
       tacho_cnt_prev = tacho_cnt;
-      Serial.print("A1 = "); Serial.print(in);
-      Serial.print(",\t pwm = "); Serial.print(pwm); 
-      Serial.print(",\t tach = ");Serial.println(tacho_d);
+      //Serial.print("A1 = "); Serial.print(in);
+      //Serial.print(",\t pwm = "); Serial.print(pwm); 
+      //Serial.print(",\t tach = ");Serial.println(tacho_d);
       cnt = 0;
     }
   }
