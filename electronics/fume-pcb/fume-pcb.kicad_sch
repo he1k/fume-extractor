@@ -3570,6 +3570,12 @@
 		)
 	)
 	(junction
+		(at 30.48 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01070a72-a1cf-4c29-8e27-0e08de8da35a")
+	)
+	(junction
 		(at 49.53 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3714,6 +3720,10 @@
 		(uuid "f9a8d383-c9ab-44f3-8a47-edce7617f5bd")
 	)
 	(no_connect
+		(at 245.11 67.31)
+		(uuid "17c7fdd8-2ad0-400f-8ab6-13014d4ae3d6")
+	)
+	(no_connect
 		(at 245.11 72.39)
 		(uuid "1a01eccc-65b4-441f-abbc-91d6bb77c29a")
 	)
@@ -3752,10 +3762,6 @@
 	(no_connect
 		(at 245.11 54.61)
 		(uuid "6e6a814e-3427-4623-b17b-03504e80b3ec")
-	)
-	(no_connect
-		(at 245.11 77.47)
-		(uuid "96ae25f2-ba3c-4ce6-a65e-854759ebbdad")
 	)
 	(no_connect
 		(at 219.71 69.85)
@@ -3861,7 +3867,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 30.48) (xy 29.21 30.48)
+			(xy 30.48 31.75) (xy 30.48 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e722ce-5524-40db-b521-6f09412e4825")
+	)
+	(wire
+		(pts
+			(xy 27.94 29.21) (xy 30.48 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4241,7 +4257,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 33.02) (xy 26.67 33.02)
+			(xy 30.48 34.29) (xy 27.94 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4271,7 +4287,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 35.56) (xy 29.21 33.02)
+			(xy 30.48 36.83) (xy 30.48 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4751,6 +4767,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 31.75) (xy 30.48 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c804016a-eb07-4cc5-bf3b-c5b14a6fddad")
+	)
+	(wire
+		(pts
 			(xy 76.2 68.58) (xy 76.2 71.12)
 		)
 		(stroke
@@ -4761,7 +4787,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 67.31) (xy 247.65 67.31)
+			(xy 245.11 77.47) (xy 247.65 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5211,7 +5237,7 @@
 		(uuid "44910222-0b70-4add-8487-88a84db13b50")
 	)
 	(label "VIN"
-		(at 29.21 30.48 0)
+		(at 30.48 29.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5233,7 +5259,7 @@
 		(uuid "651e5456-c2f4-43a9-a2e8-1a5abaf8b1cb")
 	)
 	(label "REF_FAN"
-		(at 247.65 67.31 0)
+		(at 247.65 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8471,74 +8497,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 21.59 33.02 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98613aaf-6c14-47b8-b358-e9d66991cc14")
-		(property "Reference" "J1"
-			(at 21.59 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR Conn"
-			(at 21.59 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
-			(at 21.59 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 21.59 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d5fff32c-49ab-4691-b5cf-8150df39bb94")
-		)
-		(pin "1"
-			(uuid "e10a2fc8-eb21-440f-8eb8-b3a6c5c156a0")
-		)
-		(instances
-			(project ""
-				(path "/c9144cb8-ec55-40f4-a57c-9e7a9024dc9f"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 148.59 158.75 0)
 		(unit 1)
@@ -8884,7 +8842,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 35.56 0)
+		(at 30.48 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8893,7 +8851,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9b8f9b8-ed76-496f-9cf2-f3ee19f5622e")
 		(property "Reference" "#PWR03"
-			(at 29.21 41.91 0)
+			(at 30.48 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8902,7 +8860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.21 40.64 0)
+			(at 30.48 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8910,7 +8868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 35.56 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8919,7 +8877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 35.56 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8928,7 +8886,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 35.56 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10521,6 +10479,77 @@
 			(project "fume-pcb"
 				(path "/c9144cb8-ec55-40f4-a57c-9e7a9024dc9f"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 22.86 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5829980-2581-4691-b3de-afa620f68856")
+		(property "Reference" "J1"
+			(at 22.86 26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR Conn"
+			(at 22.86 23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 22.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e4b1317-0b53-4968-afe0-ecddbac52165")
+		)
+		(pin "2"
+			(uuid "7656ae6c-9081-447b-ac6f-6381d0a346a2")
+		)
+		(pin "3"
+			(uuid "ad5a6541-1bce-40d3-bff9-8d08c80cfee7")
+		)
+		(instances
+			(project ""
+				(path "/c9144cb8-ec55-40f4-a57c-9e7a9024dc9f"
+					(reference "J1")
 					(unit 1)
 				)
 			)
